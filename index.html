@@ -6,9 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <h1>Weather Apps</h1>
+    <div class="container">
+      <div class="weather-app-wrap">
+        <div class="weather-app">
+          <form class="search-form" id="searchForm">
+            <div class="row">
+              <div class="col-5">
+                <input
+                  type="search"
+                  placeholder="Enter the City Name"
+                  class="rounded-pill"
+                  id="searchInput"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="search-button"
+                  style="width: 100px"
+                />
+              </div>
+              <div class="col-3">
+                <button class="current-button" style="width: 100px">
+                  Current
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="col">
+            <div class="current-time">
+              <h1 id="city"></h1>
+              <p id="todayTime"></p>
+              <p id="description"></p>
+            </div>
+          </div>
+          <div class="col-5">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span>km/h</li>
+            </ul>
+          </div>
+          <div class="col-7">
+            <p>emoji</p>
+            <span class="num cels"></span
+            ><a href="#" id="cel" class="celcius">°C</a><a class="divider">|</a
+            ><a href="#" id="far" class="farenheit">°F</a>
+          </div>
+          <div class="weather-forcast" id="forcast"></div>
+        </div>
+      </div>
+    </div>
     <script src="src/app.js"></script>
   </body>
 </html>
