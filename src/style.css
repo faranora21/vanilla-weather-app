@@ -17,3 +17,32 @@
   text-align: center;
   border: 2px solid black;
 }
+
+li {
+  list-style: none;
+}
+
+.current-time {
+  text-align: center;
+}
+
+h2 {
+  position: relative;
+  top: 20px;
+}
+
+.emoji {
+  position: relative;
+  top: 20px;
+  right: 30px;
+}
+
+.temp {
+  position: relative;
+  bottom: 20px;
+  left: 50px;
+}
+
+.cels {
+  font-size: 25px;
+}
