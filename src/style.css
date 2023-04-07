@@ -1,5 +1,9 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .weather-app-wrap {
-  max-width: 600px;
+  max-width: 800px;
   margin: 30px auto;
 }
 
@@ -7,6 +11,7 @@
   padding: 20px;
   border: 1px solid black;
   border-radius: 7px;
+  background: linear-gradient(-20deg, #ffcab0 0%, rgb(251, 252, 219) 100%);
 }
 
 .search-form {
@@ -15,7 +20,40 @@
 
 .rounded-pill {
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid rgba(255, 154, 60, 1);
+}
+
+.cityContainer {
+  margin-top: 20px;
+}
+
+#city {
+  font-size: 35px;
+}
+
+.search-button {
+  border: 2px solid #f1b963;
+  border-radius: 6px;
+  background-color: beige;
+}
+
+.current-button {
+  border: 2px solid #f1b963;
+  border-radius: 6px;
+  background-color: beige;
+  margin-top: 10px;
+}
+
+#todayTime {
+  font-size: 28px;
+}
+.weekday {
+  border: 2px solid rgba(255, 154, 60, 0.8);
+  border-radius: 10px;
+  background-color: #feffdf;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
 }
 
 li {
@@ -31,18 +69,30 @@ h2 {
   top: 20px;
 }
 
-.emoji {
-  position: relative;
-  top: 20px;
-  right: 30px;
-}
-
 .temp {
-  position: relative;
-  bottom: 20px;
-  left: 50px;
+  margin: 0 auto;
 }
 
 .cels {
+  font-size: 28px;
+}
+
+#cel {
   font-size: 25px;
+}
+
+.fare {
+  font-size: 28px;
+}
+
+.divider {
+  font-size: 25px;
+}
+
+#far {
+  font-size: 25px;
+}
+
+#description {
+  text-transform: capitalize;
 }

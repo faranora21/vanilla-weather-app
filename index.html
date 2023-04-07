@@ -12,6 +12,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
@@ -19,40 +25,39 @@
       <div class="weather-app-wrap">
         <div class="weather-app">
           <form class="search-form" id="searchForm">
-            <div class="row">
-              <div class="col-5">
-                <input
-                  type="search"
-                  placeholder="Enter the City Name"
-                  class="rounded-pill"
-                  id="searchInput"
-                />
-              </div>
-              <div class="col-3">
-                <input
-                  type="submit"
-                  value="Search"
-                  class="search-button"
-                  style="width: 100px"
-                />
-              </div>
-              <div class="col-3">
-                <button class="current-button" style="width: 100px">
-                  Current
-                </button>
-              </div>
+            <div>
+              <input
+                type="search"
+                placeholder="Enter the City Name"
+                class="rounded-pill"
+                id="searchInput"
+              />
+              <input
+                type="submit"
+                value="Search"
+                class="search-button"
+                style="width: 100px"
+              />
             </div>
           </form>
           <div class="col">
             <div class="current-time">
-              <h2 id="city">Johor Bahru</h2>
-              <p class="emoji">emoji</p>
+              <div class="cityContainer row"> 
+                <div class="col-4 offset-4">
+              <span id="city">Johor Bahru</span>
+            </div>
+                <div class="col-2 offset-1">
+             <span> <button class="current-button" style="width: 100px">
+                Current
+              </button></span> 
+            </div>
+             </div>
+              <img src="" alt="Clear" id="icon" />
               <span class="temp">
                 <span class="num cels">30</span
                 ><a href="#" id="cel" class="celcius">°C</a
                 ><a class="divider">|</a
                 ><a href="#" id="far" class="farenheit">°F</a>
-              </span>
               <p id="todayTime">Saturday, 13:00</p>
             </div>
           </div>
@@ -63,9 +68,9 @@
               <li>Wind: <span id="wind">20</span>km/h</li>
             </ul>
           </div>
-          <div class="weather-forcast" id="forcast"></div>
+          <div class="weather-forcast" id="forecast"></div>
         </div>
-        <small>Coded by Farah</small>
+        <small>Coded by Farah  <a href="https://github.com/faranora21/vanilla-weather-app" target="_blank">Open-source code</a> on Github</small>
       </div>
     </div>
     <script src="src/app.js"></script>
